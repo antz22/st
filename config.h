@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=31:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:pixelsize=24:antialias=true:autohint=true";
 static char *font2[] = { 
     "Braille:pixelsize=11:antialias=true:autohint=true"
     /* "JoyPixels:pixelsize=11:antialias=true:autohint=true", */
@@ -121,35 +121,35 @@ float alpha = 0.80;
 
 /************************COLORSCHEMES**********************************/
 
-//[> Terminal colors (16 first used in escape sequence) <]
+/*[> Terminal colors (16 first used in escape sequence) <]*/
 //static const char *colorname[] = {
-	//[> 8 normal colors <]
-	//"black",
-	//"red3",
-	//"green3",
-	//"yellow3",
-	//"blue2",
-	//"magenta3",
-	//"cyan3",
-	//"gray90",
+  //[> [> 8 normal colors <] <]
+  //"black",
+  //"red3",
+  //"green3",
+  //"yellow3",
+  //"blue2",
+  //"magenta3",
+  //"cyan3",
+  //"gray90",
 
-	//[> 8 bright colors <]
-	//"gray50",
-	//"red",
-	//"green",
-	//"yellow",
-	//"#5c5cff",
-	//"magenta",
-	//"cyan",
-	//"white",
+  ////[> 8 bright colors <]
+  //"gray50",
+  //"red",
+  //"green",
+  //"yellow",
+  //"#5c5cff",
+  //"magenta",
+  //"cyan",
+  //"white",
 
-	//[255] = 0,
+  //[255] = 0,
 
-	//[> more colors can be added after 255 to use with DefaultXX <]
-	//"#cccccc",
-	//"#555555",
-	//"#cccccc",
-	//"#555555",
+  ////[> more colors can be added after 255 to use with DefaultXX <]
+  //"#cccccc",
+  //"#555555",
+  //"#cccccc",
+  //"#555555",
 //};
 
 
@@ -161,25 +161,29 @@ float alpha = 0.80;
 //static unsigned int defaultcs = 257;
 //unsigned int defaultbg = 258;
 //static unsigned int defaultrcs = 259;
+//unsigned int defaultfg = 259;
+//static unsigned int defaultcs = 257;
+//unsigned int defaultbg = 258;
+//static unsigned int defaultrcs = 257;
 
 /*************BASE 16 ONE DARK**************/
 //static const char *colorname[] = {
-  //"#282c34", /* base00 */
-  //"#e06c75", /* base08 */
-  //"#98c379", /* base0B */
-  //"#e5c07b", /* base0A */
-  //"#61afef", /* base0D */
-  //"#c678dd", /* base0E */
-  //"#56b6c2", /* base0C */
-  //"#abb2bf", /* base05 */
-  //"#545862", /* base03 */
-  //"#d19a66", /* base09 */
-  //"#353b45", /* base01 */
-  //"#3e4451", /* base02 */
-  //"#565c64", /* base04 */
-  //"#b6bdca", /* base06 */
-  //"#be5046", /* base0F */
-  //"#c8ccd4", /* base07 */
+  //"#282c34", [>[> base00 <]<]
+  //"#e06c75", [>[> base08 <]<]
+  //"#98c379", [>[> base0B <]<]
+  //"#e5c07b", [>[> base0A <]<]
+  //"#61afef", [>[> base0D <]<]
+  //"#c678dd", [>[> base0E <]<]
+  //"#56b6c2", [>[> base0C <]<]
+  //"#abb2bf", [>[> base05 <]<]
+  //"#545862", [>[> base03 <]<]
+  //"#d19a66", [>[> base09 <]<]
+  //"#353b45", [>[> base01 <]<]
+  //"#3e4451", [>[> base02 <]<]
+  //"#565c64", [>[> base04 <]<]
+  //"#b6bdca", [>[> base06 <]<]
+  //"#be5046", [>[> base0F <]<]
+  //"#c8ccd4", [>[> base07 <]<]
 //};
 
 //unsigned int defaultfg = 7;
@@ -190,29 +194,29 @@ float alpha = 0.80;
 
 
 /*************BASE 16 GRUVBOX DARK**************/
-static const char *colorname[] = {
-  "#282828", /* base00 */
-  "#fb4934", /* base08 */
-  "#b8bb26", /* base0B */
-  "#fabd2f", /* base0A */
-  "#83a598", /* base0D */
-  "#d3869b", /* base0E */
-  "#8ec07c", /* base0C */
-  "#d5c4a1", /* base05 */
-  "#665c54", /* base03 */
-  "#fe8019", /* base09 */
-  "#3c3836", /* base01 */
-  "#504945", /* base02 */
-  "#bdae93", /* base04 */
-  "#ebdbb2", /* base06 */
-  "#d65d0e", /* base0F */
-  "#fbf1c7", /* base07 */
-};
+//static const char *colorname[] = {
+  //"#282828", [> base00 <]
+  //"#fb4934", [> base08 <]
+  //"#b8bb26", [> base0B <]
+  //"#fabd2f", [> base0A <]
+  //"#83a598", [> base0D <]
+  //"#d3869b", [> base0E <]
+  //"#8ec07c", [> base0C <]
+  //"#d5c4a1", [> base05 <]
+  //"#665c54", [> base03 <]
+  //"#fe8019", [> base09 <]
+  //"#3c3836", [> base01 <]
+  //"#504945", [> base02 <]
+  //"#bdae93", [> base04 <]
+  //"#ebdbb2", [> base06 <]
+  //"#d65d0e", [> base0F <]
+  //"#fbf1c7", [> base07 <]
+//};
 
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 13;
-static unsigned int defaultrcs = 0;
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 13;
+//static unsigned int defaultrcs = 0;
 
 
 /****************BASE 16 NORD****************/
@@ -241,6 +245,82 @@ static unsigned int defaultrcs = 0;
 //static unsigned int defaultcs = 13;
 //static unsigned int defaultrcs = 0;
 
+
+/****************BASE 16 TOMORROW NIGHT****************/
+static const char *colorname[] = {
+  "#1d1f21", /* base00 */
+  "#cc6666", /* base08 */
+  "#b5bd68", /* base0B */
+  "#f0c674", /* base0A */
+  "#81a2be", /* base0D */
+  "#b294bb", /* base0E */
+  "#8abeb7", /* base0C */
+  "#c5c8c6", /* base05 */
+  "#969896", /* base03 */
+  "#de935f", /* base09 */
+  "#282a2e", /* base01 */
+  "#373b41", /* base02 */
+  "#b4b7b4", /* base04 */
+  "#e0e0e0", /* base06 */
+  "#a3685a", /* base0F */
+  "#ffffff", /* base07 */
+};
+
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 13;
+static unsigned int defaultrcs = 0;
+
+/****************BASE 16 MATERIAL DARKER***************/
+//static const char *colorname[] = {
+  //"#212121", [> base00 <]
+  //"#f07178", [> base08 <]
+  //"#c3e88d", [> base0B <]
+  //"#ffcb6b", [> base0A <]
+  //"#82aaff", [> base0D <]
+  //"#c792ea", [> base0E <]
+  //"#89ddff", [> base0C <]
+  //"#eeffff", [> base05 <]
+  //"#4a4a4a", [> base03 <]
+  //"#f78c6c", [> base09 <]
+  //"#303030", [> base01 <]
+  //"#353535", [> base02 <]
+  //"#b2ccd6", [> base04 <]
+  //"#eeffff", [> base06 <]
+  //"#ff5370", [> base0F <]
+  //"#ffffff", [> base07 <]
+//};
+
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 13;
+//static unsigned int defaultrcs = 0;
+
+/****************BASE 16 MATERIAL PALENIGHT****************/
+
+//static const char *colorname[] = {
+  //"#292d3e", [> base00 <]
+  //"#f07178", [> base08 <]
+  //"#c3e88d", [> base0B <]
+  //"#ffcb6b", [> base0A <]
+  //"#82aaff", [> base0D <]
+  //"#c792ea", [> base0E <]
+  //"#89ddff", [> base0C <]
+  //"#959dcb", [> base05 <]
+  //"#676e95", [> base03 <]
+  //"#f78c6c", [> base09 <]
+  //"#444267", [> base01 <]
+  //"#32374d", [> base02 <]
+  //"#8796b0", [> base04 <]
+  //"#959dcb", [> base06 <]
+  //"#ff5370", [> base0F <]
+  //"#ffffff", [> base07 <]
+//};
+
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 13;
+//static unsigned int defaultrcs = 0;
 
 
 /**************************Chris theme***********************/
