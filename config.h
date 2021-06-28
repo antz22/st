@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=24:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:pixelsize=30:antialias=true:autohint=true";
 static char *font2[] = { 
     "Braille:pixelsize=11:antialias=true:autohint=true"
     /* "JoyPixels:pixelsize=11:antialias=true:autohint=true", */
@@ -247,80 +247,108 @@ float alpha = 0.80;
 
 
 /****************BASE 16 TOMORROW NIGHT****************/
+//static const char *colorname[] = {
+  //"#1d1f21", /*[> base00 <]*/
+  //"#cc6666", /*[> base08 <]*/
+  //"#b5bd68", /*[> base0B <]*/
+  //"#f0c674", /*[> base0A <]*/
+  //"#81a2be", /*[> base0D <]*/
+  //"#b294bb", /*[> base0E <]*/
+  //"#8abeb7", /*[> base0C <]*/
+  //"#c5c8c6", /*[> base05 <]*/
+  //"#969896", /*[> base03 <]*/
+  //"#de935f", /*[> base09 <]*/
+  //"#282a2e", /*[> base01 <]*/
+  //"#373b41", /*[> base02 <]*/
+  //"#b4b7b4", /*[> base04 <]*/
+  //"#e0e0e0", /*[> base06 <]*/
+  //"#a3685a", /*[> base0F <]*/
+  //"#ffffff", /*[> base07 <]*/
+//};
+
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 13;
+//static unsigned int defaultrcs = 0;
+
+/****************BASE 16 MATERIAL DARKER***************/
+//static const char *colorname[] = {
+  //"#212121", [>[> base00 <]<]
+  //"#f07178", [>[> base08 <]<]
+  //"#c3e88d", [>[> base0B <]<]
+  //"#ffcb6b", [>[> base0A <]<]
+  //"#82aaff", [>[> base0D <]<]
+  //"#c792ea", [>[> base0E <]<]
+  //"#89ddff", [>[> base0C <]<]
+  //"#eeffff", [>[> base05 <]<]
+  //"#4a4a4a", [>[> base03 <]<]
+  //"#f78c6c", [>[> base09 <]<]
+  //"#303030", [>[> base01 <]<]
+  //"#353535", [>[> base02 <]<]
+  //"#b2ccd6", [>[> base04 <]<]
+  //"#eeffff", [>[> base06 <]<]
+  //"#ff5370", [>[> base0F <]<]
+  //"#ffffff", [>[> base07 <]<]
+//};
+
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 13;
+//static unsigned int defaultrcs = 0;
+
+//[>***************BASE 16 MATERIAL PALENIGHT***************<]
+
+//static const char *colorname[] = {
+  //"#292d3e", [>[> base00 <]<]
+  //"#f07178", [>[> base08 <]<]
+  //"#c3e88d", [>[> base0B <]<]
+  //"#ffcb6b", [>[> base0A <]<]
+  //"#82aaff", [>[> base0D <]<]
+  //"#c792ea", [>[> base0E <]<]
+  //"#89ddff", [>[> base0C <]<]
+  //"#959dcb", [>[> base05 <]<]
+  //"#676e95", [>[> base03 <]<]
+  //"#f78c6c", [>[> base09 <]<]
+  //"#444267", [>[> base01 <]<]
+  //"#32374d", [>[> base02 <]<]
+  //"#8796b0", [>[> base04 <]<]
+  //"#959dcb", [>[> base06 <]<]
+  //"#ff5370", [>[> base0F <]<]
+  //"#ffffff", [>[> base07 <]<]
+//};
+
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 13;
+//static unsigned int defaultrcs = 0;
+
+
+//[>**************Tokyo night storm ***************<]
+
 static const char *colorname[] = {
-  "#1d1f21", /* base00 */
-  "#cc6666", /* base08 */
-  "#b5bd68", /* base0B */
-  "#f0c674", /* base0A */
-  "#81a2be", /* base0D */
-  "#b294bb", /* base0E */
-  "#8abeb7", /* base0C */
-  "#c5c8c6", /* base05 */
-  "#969896", /* base03 */
-  "#de935f", /* base09 */
-  "#282a2e", /* base01 */
-  "#373b41", /* base02 */
-  "#b4b7b4", /* base04 */
-  "#e0e0e0", /* base06 */
-  "#a3685a", /* base0F */
-  "#ffffff", /* base07 */
+  "#1D202F",
+  "#f7768e",
+  "#9ece6a",
+  "#e0af68",
+  "#7aa2f7",
+  "#bb9af7",
+  "#7dcfff",
+  "#a9b1d6",
+  "#414868",
+  "#f7768e",
+  "#9ece6a",
+  "#e0af68",
+  "#7aa2f7",
+  "#bb9af7",
+  "#7dcfff",
+  "#c0caf5",
+
 };
 
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
 static unsigned int defaultcs = 13;
 static unsigned int defaultrcs = 0;
-
-/****************BASE 16 MATERIAL DARKER***************/
-//static const char *colorname[] = {
-  //"#212121", [> base00 <]
-  //"#f07178", [> base08 <]
-  //"#c3e88d", [> base0B <]
-  //"#ffcb6b", [> base0A <]
-  //"#82aaff", [> base0D <]
-  //"#c792ea", [> base0E <]
-  //"#89ddff", [> base0C <]
-  //"#eeffff", [> base05 <]
-  //"#4a4a4a", [> base03 <]
-  //"#f78c6c", [> base09 <]
-  //"#303030", [> base01 <]
-  //"#353535", [> base02 <]
-  //"#b2ccd6", [> base04 <]
-  //"#eeffff", [> base06 <]
-  //"#ff5370", [> base0F <]
-  //"#ffffff", [> base07 <]
-//};
-
-//unsigned int defaultfg = 7;
-//unsigned int defaultbg = 0;
-//static unsigned int defaultcs = 13;
-//static unsigned int defaultrcs = 0;
-
-/****************BASE 16 MATERIAL PALENIGHT****************/
-
-//static const char *colorname[] = {
-  //"#292d3e", [> base00 <]
-  //"#f07178", [> base08 <]
-  //"#c3e88d", [> base0B <]
-  //"#ffcb6b", [> base0A <]
-  //"#82aaff", [> base0D <]
-  //"#c792ea", [> base0E <]
-  //"#89ddff", [> base0C <]
-  //"#959dcb", [> base05 <]
-  //"#676e95", [> base03 <]
-  //"#f78c6c", [> base09 <]
-  //"#444267", [> base01 <]
-  //"#32374d", [> base02 <]
-  //"#8796b0", [> base04 <]
-  //"#959dcb", [> base06 <]
-  //"#ff5370", [> base0F <]
-  //"#ffffff", [> base07 <]
-//};
-
-//unsigned int defaultfg = 7;
-//unsigned int defaultbg = 0;
-//static unsigned int defaultcs = 13;
-//static unsigned int defaultrcs = 0;
 
 
 /**************************Chris theme***********************/
